@@ -13,4 +13,8 @@ public class Calculator {
     public int getNumberOne(){
         return numberOne;
     }
+
+    public int getNumberTwo(){
+        return numberTwo;
+    }
 }

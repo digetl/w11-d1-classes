@@ -5,11 +5,10 @@ import static org.junit.Assert.assertEquals;
 
 public class WaterBottleTest {
     WaterBottle waterBottle;
-    int volume = 100;
 
     @Before
     public void before(){
-        waterBottle = new WaterBottle(volume);
+        waterBottle = new WaterBottle();
     }
 
     @Test
@@ -19,7 +18,15 @@ public class WaterBottleTest {
 
     @Test
     public void takesDrink(){
-        assertEquals(90, waterBottle.drink());
+        waterBottle.drink();
+        assertEquals(90, waterBottle.getVolume());
+    }
+
+    @Test
+    public void takesTwoDrinks(){
+        waterBottle.drink();
+        waterBottle.drink();
+        assertEquals(80, waterBottle.getVolume());
     }
 
 }

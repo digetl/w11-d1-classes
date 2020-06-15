@@ -27,4 +27,8 @@ public class Calculator {
     public double getNumberOneDouble(){
         return numberOneDouble;
     }
+
+    public int add(int numberOne, int numberTwo){
+        return numberOne + numberTwo;
+    }
 }

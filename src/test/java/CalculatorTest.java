@@ -8,7 +8,7 @@ public class CalculatorTest {
 
     @Before
     public void before(){
-        calculator = new Calculator(10, 5, 3.5, 7.5);
+        calculator = new Calculator(10, 5, 7.5, 3.5);
     }
 
     @Test
@@ -23,12 +23,12 @@ public class CalculatorTest {
 
     @Test
     public void hasNumberTwoDouble(){
-        assertEquals(7.5, calculator.getNumberTwoDouble(), 0.1);
+        assertEquals(3.5, calculator.getNumberTwoDouble(), 0.1);
     }
 
     @Test
     public void hasNumberOneDouble(){
-        assertEquals(3.5, calculator.getNumberOneDouble(), 0.1);
+        assertEquals(7.5, calculator.getNumberOneDouble(), 0.1);
     }
 
     @Test
@@ -44,5 +44,10 @@ public class CalculatorTest {
     @Test
     public void multiplyNumberOneToNumberTwo(){
         assertEquals(50, calculator.multiply(10, 5));
+    }
+
+    @Test
+    public void divideNumberOneDoubleByNumberTwoDouble(){
+        assertEquals(2.14, calculator.divide(7.5, 3.5), 0.01);
     }
 }

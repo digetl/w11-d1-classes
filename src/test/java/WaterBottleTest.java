@@ -30,7 +30,7 @@ public class WaterBottleTest {
     }
 
     @Test
-    public void bottleisEmpty(){
+    public void bottleIsEmpty(){
         waterBottle.empty();
         assertEquals(0, waterBottle.getVolume());
     }

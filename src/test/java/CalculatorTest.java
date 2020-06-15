@@ -40,4 +40,9 @@ public class CalculatorTest {
     public void subtractNumberTwoFromNumberOne(){
         assertEquals(5, calculator.subtract(10, 5));
     }
+
+    @Test
+    public void multiplyNumberOneToNumberTwo(){
+        assertEquals(50, calculator.multiply(10, 5));
+    }
 }

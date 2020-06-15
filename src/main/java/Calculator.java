@@ -23,4 +23,8 @@ public class Calculator {
     public double getNumberTwoDouble(){
         return numberTwoDouble;
     }
+
+    public double getNumberOneDouble(){
+        return numberOneDouble;
+    }
 }

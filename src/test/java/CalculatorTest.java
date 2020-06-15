@@ -30,4 +30,9 @@ public class CalculatorTest {
     public void hasNumberOneDouble(){
         assertEquals(3.5, calculator.getNumberOneDouble(), 0.1);
     }
+
+    @Test
+    public void addNumberOneToNumberTwo(){
+        assertEquals(15, calculator.add(10, 5));
+    }
 }

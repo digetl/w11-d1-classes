@@ -5,9 +5,11 @@ public class Calculator {
     private double numberOneDouble;
     private double numberTwoDouble;
 
-    public Calculator(int numberOne, int numberTwo) {
+    public Calculator(int numberOne, int numberTwo, double numberOneDouble, double numberTwoDouble) {
         this.numberOne = numberOne;
         this.numberTwo = numberTwo;
+        this.numberOneDouble = numberOneDouble;
+        this.numberTwoDouble = numberTwoDouble;
     }
 
     public int getNumberOne(){
@@ -16,5 +18,9 @@ public class Calculator {
 
     public int getNumberTwo(){
         return numberTwo;
+    }
+
+    public double getNumberTwoDouble(){
+        return numberTwoDouble;
     }
 }

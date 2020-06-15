@@ -39,4 +39,8 @@ public class Calculator {
     public int multiply(int numberOne, int numberTwo){
         return numberOne * numberTwo;
     }
+
+    public double divide(double numberOneDouble, double numberTwoDouble) {
+        return numberOneDouble / numberTwoDouble;
+    }
 }

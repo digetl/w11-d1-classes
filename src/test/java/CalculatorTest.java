@@ -8,7 +8,7 @@ public class CalculatorTest {
 
     @Before
     public void before(){
-        calculator = new Calculator(10, 5);
+        calculator = new Calculator(10, 5, 3.5, 7.5);
     }
 
     @Test
@@ -21,4 +21,8 @@ public class CalculatorTest {
         assertEquals(5, calculator.getNumberTwo());
     }
 
+    @Test
+    public void hasNumberTwoDouble(){
+        assertEquals(3.5, calculator.getNumberTwoDouble());
+    }
 }

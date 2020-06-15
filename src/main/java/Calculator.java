@@ -5,8 +5,12 @@ public class Calculator {
     private double numberOneDouble;
     private double numberTwoDouble;
 
-    public Calculator(int numberOne, int numberTwo){
+    public Calculator(int numberOne, int numberTwo) {
         this.numberOne = numberOne;
         this.numberTwo = numberTwo;
+    }
+
+    public int getNumberOne(){
+        return numberOne;
     }
 }

@@ -25,4 +25,9 @@ public class CalculatorTest {
     public void hasNumberTwoDouble(){
         assertEquals(7.5, calculator.getNumberTwoDouble(), 0.1);
     }
+
+    @Test
+    public void hasNumberOneDouble(){
+        assertEquals(3.5, calculator.getNumberOneDouble(), 0.1);
+    }
 }

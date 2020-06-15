@@ -35,4 +35,9 @@ public class CalculatorTest {
     public void addNumberOneToNumberTwo(){
         assertEquals(15, calculator.add(10, 5));
     }
+
+    @Test
+    public void subtractNumberTwoFromNumberOne(){
+        assertEquals(5, calculator.subtract(10, 5));
+    }
 }
